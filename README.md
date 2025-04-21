@@ -21,22 +21,27 @@ uv venv  # Создаст виртуальное окружение в .venv
   .venv\Scripts\activate
 ```
 
-2. Создайте файл .env с данными из env_example
+2. Синхронизируйте библиотеки:
+```bash
+uv sync
+```
+
+3. Создайте файл .env с данными из env_example
 ```bash
 cp .env_example .env
 ```
 
-3. Запуск сервиса
+4. Запуск сервиса
 ```bash
 make up
 ```
 
-4. Запуск линтеров
+5. Запуск линтеров
 ```bash
 make linters
 ```
 
-5. Запуск тестов
+6. Запуск тестов
 ```bash
 make test
 ```
